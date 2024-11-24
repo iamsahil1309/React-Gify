@@ -57,7 +57,10 @@ function Header() {
             <Link to="/favorites">Favorite GIFs</Link>
           </div>
         )}
-        <button className="block lg:hidden">
+        <button
+          onClick={() => setShowCategories(!showCategories)}
+          className="block lg:hidden"
+        >
           <NavIcon />
         </button>
 
@@ -66,24 +69,23 @@ function Header() {
             <span className="text-3xl font-extrabold">Categories</span>
             <hr className="bg-gray-100 opacity-50 my-5" />
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 ">
-                {categories.map((category) => {
-                    return (
-                      <Link
-                        key={category.name}
-                        to={`/${category.name_encoded}`}
-                        className="font-bold relative after:bg-white after:absolute after:h-[2px] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer "
-                      >
-                        {category.name}
-                      </Link>
-                    );
-                })}
-             
+              {categories.map((category) => {
+                return (
+                  <Link
+                    key={category.name}
+                    to={`/${category.name_encoded}`}
+                    className="font-bold relative after:bg-white after:absolute after:h-[2px] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer "
+                  >
+                    {category.name}
+                  </Link>
+                );
+              })}
             </div>
           </div>
         )}
       </div>
       {/* search */}
-      <GifSearch/>
+      <GifSearch />
     </nav>
   );
 }
