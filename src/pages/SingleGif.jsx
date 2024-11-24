@@ -15,7 +15,7 @@ function SingleGif() {
   const [relatedGif, setRelatedGif] = useState([]);
   const [readMore, setReadMore] = useState(false);
 
-  const { gif,fav } = useGifState();
+  const { gif,fav, addToFavorites } = useGifState();
 
   const fetchGif = async () => {
     const gifId = slug.split("-");
