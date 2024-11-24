@@ -4,6 +4,7 @@ import NavIcon from "./NavIcon";
 import { HiEllipsisVertical } from "react-icons/hi2";
 import { useGifState } from "../context/GifContext";
 import Favorites from "../pages/Favorites";
+import GifSearch from "./GifSearch";
 
 function Header() {
   const [categories, setCategories] = useState([]);
@@ -82,6 +83,7 @@ function Header() {
         )}
       </div>
       {/* search */}
+      <GifSearch/>
     </nav>
   );
 }
