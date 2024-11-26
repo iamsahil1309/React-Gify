@@ -21,7 +21,7 @@ This project is a clone of the popular Giphy website that allows users to search
 ## Live Demo 🌐
 
 Check out the live version of the app here:  
-[[**Giphy Live App**](https://react-gigy.netlify.app/) 🎉]
+[[**Gify Live App**](https://react-gigy.netlify.app/) 🎉]
 
 ## How to Run Locally 🚩
 
@@ -29,12 +29,12 @@ To run the project locally, follow these steps:
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/giphy.git
+   git clone https://github.com/iamsahil1309/React-Gify.git
    ```
 
 2. Navigate to the project directory:
    ```bash
-   cd giphy
+   cd React-Gify
    ```
 
 3. Install dependencies:
